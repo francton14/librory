@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.tcl.librory.views.LandingPage">
+    <top>
+        <GridPane alignment="CENTER" styleClass="header">
+            <Button GridPane.rowIndex="0" GridPane.columnIndex="0">Home</Button>
+            <Label maxWidth="Infinity" GridPane.rowIndex="0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS">LIBRORY</Label>
+            <Button GridPane.rowIndex="0" GridPane.columnIndex="2">Register</Button>
+        </GridPane>
+    </top>
+    <center>
+        <VBox alignment="CENTER" styleClass="body, jumbotron, login" spacing="10">
+            <Label styleClass="title">Sign in</Label>
+            <VBox alignment="CENTER_LEFT" maxWidth="400" fillWidth="true">
+                <Label>Username</Label>
+                <TextField/>
+            </VBox>
+            <VBox alignment="CENTER_LEFT" maxWidth="400" fillWidth="true">
+                <Label>Password</Label>
+                <TextField/>
+            </VBox>
+            <Button>Proceed</Button>
+        </VBox>
+    </center>
+</BorderPane>

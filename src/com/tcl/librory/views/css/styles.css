@@ -69,3 +69,16 @@
     -fx-text-fill: #ECEFF1;
     -fx-border-radius: 5px;
 }
+
+.body.jumbotron.login {
+    -fx-background-color: #ECEFF1;
+    -fx-padding: 50px;
+    -fx-max-height: 400;
+    -fx-max-width: 500;
+}
+
+.body.jumbotron.login .label.title {
+    -fx-font-family: "Roboto Slab";
+    -fx-font-size: 32;
+    -fx-text-fill: #00BCD4;
+}

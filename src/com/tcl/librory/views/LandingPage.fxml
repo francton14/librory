@@ -7,9 +7,9 @@
 <BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.tcl.librory.views.LandingPage">
     <top>
         <GridPane alignment="CENTER" styleClass="header">
-            <Button GridPane.rowIndex="0" GridPane.columnIndex="0">Register</Button>
+            <Button GridPane.rowIndex="0" GridPane.columnIndex="0" fx:id="btnRegister">Register</Button>
             <Label maxWidth="Infinity" GridPane.rowIndex="0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS">LIBRORY</Label>
-            <Button GridPane.rowIndex="0" GridPane.columnIndex="2">Sign in</Button>
+            <Button GridPane.rowIndex="0" GridPane.columnIndex="2" fx:id="btnSignIn" onMouseClicked="#btnSignInOnClick">Sign in</Button>
         </GridPane>
     </top>
     <center>
