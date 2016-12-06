@@ -1,0 +1,71 @@
+@font-face {
+    src: url("../fonts/RobotoSlab-Regular.ttf");
+}
+
+@font-face {
+    src: url("../fonts/RobotoSlab-Bold.ttf");
+}
+
+.header {
+    -fx-background-color: #00BCD4;
+    -fx-padding: 15px;
+}
+
+.header > .label {
+    -fx-font-family: "Roboto Slab";
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-font-size: 32px;
+    -fx-text-fill: #ECEFF1;
+}
+
+.header > .button {
+    -fx-font-family: "Roboto Slab";
+    -fx-background-color: #26C6DA;
+    -fx-padding: 10px;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ECEFF1;
+    -fx-border-radius: 5px;
+}
+
+.body {
+    -fx-padding: 15px;
+    -fx-max-width: 920px;
+}
+
+.body .label {
+    -fx-font-family: "Roboto Slab";
+    -fx-font-size: 16px;
+    -fx-font-weight: normal;
+}
+
+.body .text-field {
+    -fx-font-family: "Roboto Slab";
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-border-color: #90A4AE;
+    -fx-border-radius: 0px;
+    -fx-font-size: 16px;
+}
+
+.body .text-field:hover {
+    -fx-border-color: #00BCD4;
+    -fx-border-radius: 0;
+}
+
+.body .text-field:focused {
+    -fx-border-color: #00BCD4;
+    -fx-border-radius: 0;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.body .button {
+    -fx-font-family: "Roboto Slab";
+    -fx-background-color: #00BCD4;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ECEFF1;
+    -fx-border-radius: 5px;
+}

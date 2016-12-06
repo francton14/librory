@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.tcl.librory.views.LandingPage">
+    <top>
+        <GridPane alignment="CENTER" styleClass="header">
+            <Button GridPane.rowIndex="0" GridPane.columnIndex="0">Register</Button>
+            <Label maxWidth="Infinity" GridPane.rowIndex="0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS">LIBRORY</Label>
+            <Button GridPane.rowIndex="0" GridPane.columnIndex="2">Sign in</Button>
+        </GridPane>
+    </top>
+    <center>
+        <VBox styleClass="body" spacing="10">
+            <GridPane maxWidth="500" hgap="10">
+                <Label minWidth="400" GridPane.rowIndex="0" GridPane.columnIndex="0">Book Title</Label>
+                <TextField GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                <Button GridPane.rowIndex="1" GridPane.columnIndex="1">Search</Button>
+            </GridPane>
+            <AnchorPane VBox.vgrow="ALWAYS">
+                <StackPane AnchorPane.topAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                    <TableView>
+                        <columnResizePolicy><TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/></columnResizePolicy>
+                        <columns>
+                            <TableColumn text="Book Title">
+                                <cellValueFactory>
+                                    <PropertyValueFactory property="title"/>
+                                </cellValueFactory>
+                            </TableColumn>
+                            <TableColumn text="Author">
+                                <cellValueFactory>
+                                    <PropertyValueFactory property="author"/>
+                                </cellValueFactory>
+                            </TableColumn>
+                            <TableColumn text="Genre">
+                                <cellValueFactory>
+                                    <PropertyValueFactory property="Genre"/>
+                                </cellValueFactory>
+                            </TableColumn>
+                            <TableColumn text="Publisher">
+                                <cellValueFactory>
+                                    <PropertyValueFactory property="publisher"/>
+                                </cellValueFactory>
+                            </TableColumn>
+                            <TableColumn text="Published Date">
+                                <cellValueFactory>
+                                    <PropertyValueFactory property="publishedDate"/>
+                                </cellValueFactory>
+                            </TableColumn>
+                        </columns>
+                    </TableView>
+                </StackPane>
+            </AnchorPane>
+        </VBox>
+    </center>
+</BorderPane>
